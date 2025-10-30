@@ -1,11 +1,11 @@
-import { createApp } from "vue";
-import App from "./App.vue";
+import { createApp } from 'vue';
+import App from './App.vue';
 
-import Antd from "ant-design-vue";
-import "ant-design-vue/dist/reset.css";
-import * as Icons from "@ant-design/icons-vue";
+import Antd from 'ant-design-vue';
+import 'ant-design-vue/dist/reset.css';
+import * as Icons from '@ant-design/icons-vue';
 
-import "./assets/base.css";
+import './assets/base.css';
 
 const app = createApp(App);
 
@@ -14,4 +14,4 @@ app.use(Antd);
 app.config.globalProperties.$icons = Icons;
 for (const key in Icons) app.component(key, Icons[key as keyof typeof Icons]);
 
-app.mount("#app");
+app.mount('#app');

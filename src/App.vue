@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import type { SizeType } from "ant-design-vue/es/config-provider";
-import { ref } from "vue";
-const size = ref<SizeType>("large");
+import type { SizeType } from 'ant-design-vue/es/config-provider';
+import { ref } from 'vue';
+const size = ref<SizeType>('large');
 </script>
 
 <template>
@@ -9,16 +9,16 @@ const size = ref<SizeType>("large");
 
   <a-space direction="vertical">
     <a-radio-group v-model:value="size">
-      <a-radio-button value="large">Large</a-radio-button>
-      <a-radio-button value="default">Default</a-radio-button>
-      <a-radio-button value="small">Small</a-radio-button>
+      <a-radio-button value="large"> Large </a-radio-button>
+      <a-radio-button value="default"> Default </a-radio-button>
+      <a-radio-button value="small"> Small </a-radio-button>
     </a-radio-group>
     <a-space>
-      <a-button type="primary" :size="size">Primary</a-button>
-      <a-button :size="size">Normal</a-button>
-      <a-button type="dashed" :size="size">Dashed</a-button>
-      <a-button danger :size="size">Danger</a-button>
-      <a-button type="link" :size="size">Link</a-button>
+      <a-button type="primary" :size="size"> Primary </a-button>
+      <a-button :size="size"> Normal </a-button>
+      <a-button type="dashed" :size="size"> Dashed </a-button>
+      <a-button danger :size="size"> Danger </a-button>
+      <a-button type="link" :size="size"> Link </a-button>
     </a-space>
     <a-space>
       <a-button type="primary" :size="size">

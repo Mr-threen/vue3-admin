@@ -1,0 +1,30 @@
+# 依赖
+node_modules
+dist
+build
+coverage
+
+# 锁文件
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# 日志
+*.log
+
+# 系统文件
+.DS_Store
+.vscode
+.idea
+
+# 生成的类型文件
+*.d.ts
+
+# 公共资源
+public
+
+# 临时文件
+.temp
+.cache
+*.tmp
+

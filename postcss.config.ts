@@ -1,10 +1,6 @@
-import type { Config } from 'postcss-load-config'
-
-const config: Config = {
+export default {
   plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
+    tailwindcss: {}, // 处理 @tailwind 指令，生成工具类
+    autoprefixer: {}, // 自动添加浏览器前缀（-webkit-, -moz- 等）
   },
-}
-
-export default config
+};
